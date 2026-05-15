@@ -8,11 +8,19 @@ authors = [
 ]
 readme = "README.md"
 
-requires-python = ">=3.13"
+requires-python = ">=3.12,<3.13"
 
 dependencies = [
-    "pandas>=2.3.0",
-    "tgedr-pycommons>=1.0.1",
+    "tgedr-dataops-ext==1.0.6",
+    "tgedr-pycommons==1.0.3",
+    "pandas>=2.3.0,<3",
+    "scispacy>=0.6.2",
+    "pip>=26.1.0",
+    "spacy==3.7.5",
+    "aiohttp==3.13.4",
+    "en_core_sci_sm @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz",
+    "tiktoken>=0.12.0",
+    "torch>=2.11.0",
 ]
 [dependency-groups]
 dev = [
@@ -27,20 +35,22 @@ dev = [
     "typer<0.17.0",
     "genbadge[coverage]>=1.1.3",
     "ipykernel>=7.2.0",
-    "langchain-community>=0.4.1",
-    "openai>=2.21.0",
-    "crewai>=0.193.2",
-    "crewai-tools>=0.76.0",
-    "dotenv>=0.9.9",
-    "langchain>=1.2.10",
-    "langchain-openai>=1.1.9",
+    "langchain-community",
+    "openai",
+    "crewai",
+    "crewai-tools",
+    "dotenv",
+    "langchain",
+    "langchain-openai",
     "chromadb>=1.5.0",
     "tokenizers>=0.22.2",
-    "autogen>=0.11.0",
-    "sentence-transformers>=5.2.2",
-    "langgraph>=1.0.8",
+    "autogen",
+    "sentence-transformers",
+    "langgraph",
     "jupyter>=1.1.1",
     "ipywidgets>=8.1.8",
+    "python-dotenv>=1.2.2",
+    "matplotlib>=3.10.8",
 ]
 
 # [project.scripts]
