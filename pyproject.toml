@@ -131,7 +131,7 @@ exclude = [
     "venv",
     "tests/",
     "typings/",
-    " notebooks/explore_llms.ipynb"
+    "notebooks/"
 ]
 
 line-length = 120
