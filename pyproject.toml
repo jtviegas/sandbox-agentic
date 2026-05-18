@@ -130,7 +130,8 @@ exclude = [
     "site-packages",
     "venv",
     "tests/",
-    "typings/"
+    "typings/",
+    " notebooks/explore_llms.ipynb"
 ]
 
 line-length = 120
